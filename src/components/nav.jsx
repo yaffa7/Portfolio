@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './nav.css'
 
 class Nav extends Component {
-    constructor(props) {
-        super(props)
-    }
-
+    
     render() {
         return (
             <div>
                 <nav className="navbar">
                     <ul className="item-list">
                         <li className="nav-item">
-                            <a href="#" className="nav-link">Github</a>
+                            <Link to="/projects">Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link">Resume</a>
+                            <Link to="/resume">Resume</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link">Projects</a>
+                            <a href="https://github.com/yaffa7" className="nav-link">Github</a>
                         </li>
                     </ul>
                 </nav>
