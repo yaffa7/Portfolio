@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './projects.css'
+import angularicon from '../icons/angular-icon.svg'
+import expressicon from '../icons/express-icon.png'
+import mongoicon from '../icons/mongo-icon.png'
+import nodeicon from '../icons/nodejs-icon.png'
 
 const Projects = () => {
     return (
@@ -26,11 +30,12 @@ const ProjectItem = (props) => {
                 <img src={props.imgURL} alt="" className="project-img" />
                 <p className="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod! Velit in ducimus temporibus asperiores perspiciatis ea sed delectus impedit?</p>
             </section>
-            <section className="project-technologies">
-                <div className="technology">Angular</div>
-                <div className="technology">Express</div>
-                <div className="technology">MongoDb</div>
-            </section>
+            <div className="project-technologies">
+                <div className="technology"><img src={angularicon} alt="angular icon"/></div>
+                <div className="technology"><img src={expressicon} alt="express icon"/></div>
+                <div className="technology"><img src={mongoicon} alt="mongodb icon"/></div>
+                <div className="technology"><img className="node" src={nodeicon} alt="node icon"/></div>
+            </div>
         </li>
     )
 }
