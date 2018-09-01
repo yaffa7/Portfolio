@@ -2,6 +2,9 @@ ul.project-list {
     width: 100%;
 }
 
+
+/* Project Item */
+
 li.project-item {
     background: rgba(255,255,255,0.5);
     text-decoration: none;
@@ -27,6 +30,23 @@ li.project-item:before {
     font-size: 25px;
 }
 
+.project-link {
+    font-size: 15px;
+    color: rgba(52, 58, 64, .9);
+    background: rgba(255,255,255,0.5);
+    border-radius: 1em;
+    padding: 6px 10px;
+    border-style: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.project-link img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
 section.project-header {
     margin-bottom: 2em;
 }
@@ -43,6 +63,9 @@ div.project-technologies {
     display: flex;
     justify-content: flex-end;
 }
+
+
+/* Technologies */
 
 div.project-technologies .technology {
     display: inline;

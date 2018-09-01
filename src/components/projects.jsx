@@ -5,6 +5,7 @@ import angularicon from '../icons/angular-icon.svg'
 import expressicon from '../icons/express-icon.png'
 import mongoicon from '../icons/mongo-icon.png'
 import nodeicon from '../icons/nodejs-icon.png'
+import externalicon from '../icons/external-link.svg'
 
 const Projects = () => {
     return (
@@ -25,6 +26,7 @@ const ProjectItem = (props) => {
         <li className="project-item">
             <section className="project-header">
                 <span className="project-title">{props.projectName}</span>
+                <button className="project-link">Demo <img src={externalicon} alt="external link icon"/></button>
             </section>
             <section className="project-content">
                 <img src={props.imgURL} alt="" className="project-img" />
