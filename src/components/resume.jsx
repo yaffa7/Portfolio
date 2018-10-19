@@ -23,8 +23,8 @@ class Resume extends Component {
                     <Link to="/">Home</Link> > <b>Resume</b>
                 </span>
                 <div className="buttons">
-                    <button className="pdf">PDF<img src={downloadIcon} alt="pdf download"/></button>
-                    <button className="word">Word<img src={downloadIcon} alt="pdf download"/></button>
+                    <div className="pdf">.pdf<img src={downloadIcon} alt="pdf download"/></div>
+                    <div className="word">.word<img src={downloadIcon} alt="word download"/></div>
                 </div>
                 <div className="pdf-content">
                     <Document
@@ -32,7 +32,7 @@ class Resume extends Component {
                         onLoadSuccess={this.onDocumentLoad}
                         loading=""
                     >
-                        <Page className="pdf"
+                        <Page className="pdf-page"
                             pageNumber={pageNumber}
                             scale={2}
                         />
