@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import './resume.css';
-import resume from '../pdf/Resume-2018.pdf';
+import resumepdf from '../pdf/Resume-2018.pdf';
+import resumedocx from '../docx/Resume-2018.docx'
 import downloadIcon from '../icons/arrow-circle-down.svg'
 
 class Resume extends Component {
@@ -23,14 +24,18 @@ class Resume extends Component {
                     <Link to="/">Home</Link> > <b>Resume</b>
                 </span>
                 <div className="buttons">
-                    <div className="pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>
-                    <div className="word">Word<img src={downloadIcon} alt="word download"/></div>
+                    <a href={resumepdf} download>
+                        <div className="pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>
+                    </a>
+                    <a href={resumedocx} download>
+                        <div className="word">Word<img src={downloadIcon} alt="word download"/></div>
+                    </a>
                 </div>
                 <div className="pdf-content">
                     <Document
-                        file={resume}
+                        file={resumepdf}
                         onLoadSuccess={this.onDocumentLoad}
-                        loading=""
+                        loading="Loading..."
                     >
                         <Page className="pdf-page"
                             pageNumber={pageNumber}
