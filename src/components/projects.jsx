@@ -6,6 +6,7 @@ import expressicon from '../icons/express-icon.png'
 import mongoicon from '../icons/mongo-icon.png'
 import nodeicon from '../icons/nodejs-icon.png'
 import externalicon from '../icons/external-link.svg'
+import todosplus from '../images/todos-plus.png'
 
 const Projects = () => {
     return (
@@ -14,7 +15,7 @@ const Projects = () => {
                 <Link to="/">Home</Link> > <b>Projects</b>
             </span>
             <ul className="project-list">
-                <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL="https://via.placeholder.com/200x200" />
+                <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL={todosplus} />
                 <ProjectItem projectName="Quick Poll (Front End)" technologies="express,mongo" imgURL="https://via.placeholder.com/200x200" />
             </ul>
         </section>
@@ -37,16 +38,16 @@ const ProjectItem = (props) => {
             <div className="project-technologies">
                 { props.technologies.split(',').map(t => {
                     if (t === 'angular') {
-                        return <AngularIcon/>
+                        return <AngularIcon key={t}/>
                     }
                     if (t === 'express') {
-                        return <ExpressIcon/>
+                        return <ExpressIcon key={t}/>
                     }
                     if (t === 'node') {
-                        return <NodeIcon/>
+                        return <NodeIcon key={t}/>
                     }
                     if (t === 'mongo') {
-                        return <MongoIcon/>
+                        return <MongoIcon key={t}/>
                     }
                 })}
             </div>

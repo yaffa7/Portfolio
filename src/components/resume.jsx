@@ -23,8 +23,8 @@ class Resume extends Component {
                     <Link to="/">Home</Link> > <b>Resume</b>
                 </span>
                 <div className="buttons">
-                    <div className="pdf">.pdf<img src={downloadIcon} alt="pdf download"/></div>
-                    <div className="word">.word<img src={downloadIcon} alt="word download"/></div>
+                    <div className="pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>
+                    <div className="word">Word<img src={downloadIcon} alt="word download"/></div>
                 </div>
                 <div className="pdf-content">
                     <Document
@@ -35,6 +35,7 @@ class Resume extends Component {
                         <Page className="pdf-page"
                             pageNumber={pageNumber}
                             scale={2}
+                            renderMode="svg"
                         />
                     </Document>
                 </div>
