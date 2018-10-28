@@ -15,7 +15,7 @@ const Projects = () => {
                 <Link to="/">Home</Link> > <b>Projects</b>
             </span>
             <ul className="project-list">
-                <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL={todosplus} />
+                <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL={todosplus} desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keep track of things you gotta do. The frontend is an Angular 6 app supported by a Node app for the backend using Mongodb for the database."/>
                 <ProjectItem projectName="Quick Poll (Front End)" technologies="express,mongo" imgURL="https://via.placeholder.com/200x200" />
             </ul>
         </section>
@@ -33,7 +33,7 @@ const ProjectItem = (props) => {
             </section>
             <section className="project-content">
                 <img src={props.imgURL} alt="" className="project-img" />
-                <p className="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod! Velit in ducimus temporibus asperiores perspiciatis ea sed delectus impedit?</p>
+                    <p className="project-description">{props.desc ? props.desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod! Velit in ducimus temporibus asperiores perspiciatis ea sed delectus impedit?"}</p>
             </section>
             <div className="project-technologies">
                 { props.technologies.split(',').map(t => {
