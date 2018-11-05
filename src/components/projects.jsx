@@ -33,8 +33,9 @@ const ProjectItem = (props) => {
             </section>
             <section className="project-content">
                 <img src={props.imgURL} alt="" className="project-img" />
-                    <p className="project-description">{props.desc ? props.desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod! Velit in ducimus temporibus asperiores perspiciatis ea sed delectus impedit?"}</p>
+                <img src={props.imgURL} alt="" className="project-img" />
             </section>
+                <p className="project-description">{props.desc ? props.desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod! Velit in ducimus temporibus asperiores perspiciatis ea sed delectus impedit?"}</p>
             <div className="project-technologies">
                 { props.technologies.split(',').map(t => {
                     if (t === 'angular') {
