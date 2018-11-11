@@ -40,3 +40,9 @@ span.breadcrumbs {
     padding: 5px;
     margin: 0 0 5em 0;
 }
+
+/* @media (min-width: 800px) { 
+  section.content {
+    margin: 0em 0em;
+  }
+} */
