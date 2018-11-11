@@ -4,7 +4,7 @@ body {
   background: url('https://i.imgur.com/osPV7yi.jpg');
   background-attachment: fixed;
   background-size: cover;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body:after {
@@ -41,8 +41,18 @@ span.breadcrumbs {
     margin: 0 0 5em 0;
 }
 
-/* @media (min-width: 800px) { 
+@media (max-width: 900px) { 
   section.content {
-    margin: 0em 0em;
+    margin: 2em 0;
   }
-} */
+  li.project-item {
+    width: 100%;
+  }
+  ul.project-list {
+    margin: 2em 0 0 0; 
+    padding: 0;
+  }
+  img:nth-child(2) {
+    margin-top: 1em;
+  }
+}
