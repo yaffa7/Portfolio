@@ -5,6 +5,7 @@ import angularicon from '../icons/angular-icon.svg'
 import expressicon from '../icons/express-icon.png'
 import mongoicon from '../icons/mongo-icon.png'
 import nodeicon from '../icons/nodejs-icon.png'
+import reacticon from '../icons/react-icon.svg'
 import externalicon from '../icons/external-link.svg'
 import todosplus from '../images/todos-plus.png'
 
@@ -16,7 +17,7 @@ const Projects = () => {
             </span>
             <ul className="project-list">
                 <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL={todosplus} desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keep track of things you gotta do. The frontend is an Angular 6 app supported by a Node app for the backend using Mongodb for the database."/>
-                <ProjectItem projectName="Quick Poll (Front End)" technologies="express,mongo" imgURL="https://via.placeholder.com/200x200" />
+                <ProjectItem projectName="Quick Poll (Front End)" technologies="react" imgURL="https://via.placeholder.com/200x200" />
             </ul>
         </section>
     )
@@ -50,6 +51,9 @@ const ProjectItem = (props) => {
                     if (t === 'mongo') {
                         return <MongoIcon key={t}/>
                     }
+                    if (t === 'react'){
+                        return <ReactIcon key={t}/>
+                    }
                 })}
             </div>
         </li>
@@ -77,6 +81,11 @@ const MongoIcon = () => {
 const NodeIcon = () => {
     return (
         <div className="technology"><img className="node" src={nodeicon} alt="node icon"/></div>
+    )
+}
+const ReactIcon = () => {
+    return (
+        <div className="technology"><img src={reacticon} alt="react icon"/></div>
     )
 }
 
