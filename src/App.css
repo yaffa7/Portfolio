@@ -4,7 +4,7 @@ body {
   background: url('https://i.imgur.com/osPV7yi.jpg');
   background-attachment: fixed;
   background-size: cover;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body:after {
@@ -19,11 +19,11 @@ body:after {
 }
 
 a {
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
 }
 
 section.content {
@@ -32,13 +32,13 @@ section.content {
 
 span.breadcrumbs {
   font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
-    color: rgba(255,255,255,1.0);
-    text-decoration: none;
-    background: rgba(255,255,255,0.2);
-    padding: 5px;
-    margin: 0 0 5em 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: rgba(255,255,255,1.0);
+  text-decoration: none;
+  background: rgba(255,255,255,0.2);
+  padding: 5px;
+  margin: 0 0 5em 0;
 }
 
 @media (max-width: 900px) { 
