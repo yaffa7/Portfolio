@@ -13,13 +13,16 @@ const Projects = () => {
     return (
         <section className="content">
             <span className="breadcrumbs">
-                <Link to="/">Home</Link> > <b>Projects</b>
+                <Link to="/">Home</Link> >
+                <span className="current-page">Projects</span>
             </span>
-            <ul className="project-list">
-                <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL={todosplus} desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keep track of things you gotta do. The frontend is an Angular 6 app supported by a Node app for the backend using Mongodb for the database."/>
-                <ProjectItem projectName="Quick Poll (Front End)" technologies="react" imgURL="https://via.placeholder.com/200x200" />
-                <ProjectItem projectName="AGDQ Quick Viewer" technologies="mongo,node,react" imgURL="https://via.placeholder.com/200x200" />
-            </ul>
+            <div className="container-center">
+                <ul className="project-list">
+                    <ProjectItem projectName="Todos Plus" technologies="angular,express,mongo,node"imgURL={todosplus} desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keep track of things you gotta do. The frontend is an Angular 6 app supported by a Node app for the backend using Mongodb for the database."/>
+                    <ProjectItem projectName="Quick Poll (Front End)" technologies="react" imgURL="https://via.placeholder.com/200x200" />
+                    <ProjectItem projectName="AGDQ Quick Viewer" technologies="mongo,node,react" imgURL="https://via.placeholder.com/200x200" />
+                </ul>
+            </div>
         </section>
     )
 }

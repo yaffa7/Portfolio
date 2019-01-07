@@ -21,7 +21,10 @@ class Resume extends Component {
         return (
             <section className='content'>
                 <span className="breadcrumbs">
-                    <Link to="/">Home</Link> > <b>Resume</b>
+                    <Link to="/">Home</Link> >
+                    <span className="current-page">
+                        Resume
+                    </span>
                 </span>
                 <div className="buttons">
                     <a href={resumepdf} download>
