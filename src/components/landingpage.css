@@ -16,9 +16,9 @@ h1, h2, h3 , h4 {
 
 .subtitle {
     margin: 0;
-    padding: 0;
+    padding: 0px 10px;
     font-size: 30px;
     font-weight: 200;
     background: rgba(255,255,255,0.2);
-    width:
+    display: inline-block;
 }

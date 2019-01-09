@@ -67,6 +67,18 @@ li.project-item:before {
 
 .project-header {
     margin-bottom: 2em;
+    display: flex;
+    align-content: flex-end;
+}
+
+.l-header {
+    flex: 1;
+    justify-content: flex-start
+}
+
+.r-header {
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .project-content {
