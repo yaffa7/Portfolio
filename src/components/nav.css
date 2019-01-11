@@ -1,3 +1,15 @@
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../fonts/Product\ Sans\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url('../fonts/Product\ Sans\ Bold.ttf');
+}
+
+
 .navbar {
     height: auto;
     width: 100%;
@@ -22,9 +34,8 @@
 }
 
 .nav-item a {
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
+    font-size: 30px;
+    font-family: 'Product Sans Regular';
     color: rgba(255,255,255,0.8);
     text-decoration: none;
 }

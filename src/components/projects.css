@@ -35,7 +35,7 @@ li.project-item {
     color: rgba(52, 58, 64, 1);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
     border-radius: 3px; 
-    max-width: 1000px;
+    width: 1000px;
     box-sizing: border-box;
 }
 
@@ -88,11 +88,16 @@ li.project-item:before {
 }
 
 .project-img {
-    height: 256px;
-    width: 448px;
+    width: 750px;
+    border-radius: .25em;
+    margin-bottom: 1em;
 }
 .project-description {
+    font-size: 21px;
+    line-height: 1.50em;
+    font-family: 'Product Sans Regular';
     margin-left: 1em;
+    color: rgb(49, 49, 49);
 }
 
 div.project-technologies {
@@ -113,8 +118,12 @@ div.project-technologies .technology {
 }
 .technology img.node {
     padding: 3px;
-    height: 50px;
-    width: 50px;
     background-color: #8fc74f;
+    border-radius: 4em;
+}
+
+.technology img.react {
+    padding: 3px;
+    background-color: #3d3d3d;
     border-radius: 4em;
 }
