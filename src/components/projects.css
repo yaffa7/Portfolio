@@ -3,6 +3,7 @@
 .current-page {
     font-weight: bold;
     margin-left: 5px;
+    font-family: 'Product Sans Bold';
 }
 
 /* Project List */
@@ -46,7 +47,7 @@ li.project-item:before {
 
 .project-title {
     font-family: 'Product Sans Bold';
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .project-link {
@@ -78,8 +79,8 @@ li.project-item:before {
 }
 
 .l-header {
-    flex: 1;
-    justify-content: flex-start
+    display: flex;
+    align-items: center;
 }
 
 .r-header {
