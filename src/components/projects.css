@@ -45,10 +45,12 @@ li.project-item:before {
 }
 
 .project-title {
+    font-family: 'Product Sans Bold';
     font-size: 25px;
 }
 
 .project-link {
+    font-family: 'Product Sans Bold';
     font-size: 15px;
     color: rgba(52, 58, 64, .9);
     background: rgba(255,255,255,0.5);
@@ -57,11 +59,15 @@ li.project-item:before {
     border-style: none;
     margin-left: 10px;
     cursor: pointer;
+    align-items: center;
+    flex: 1;
 }
+
 
 .project-link img {
     width: 15px;
     height: 15px;
+    flex: 1;
     margin-left: 5px;
 }
 
@@ -89,6 +95,7 @@ li.project-item:before {
 
 .project-img {
     width: 750px;
+    height: 422px;
     border-radius: .25em;
     margin-bottom: 1em;
 }
