@@ -28,10 +28,10 @@ class Resume extends Component {
                 </span>
                 <div className="buttons">
                     <a href={resumepdf} download>
-                        <div className="pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>
+                        <div className="download-btn pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>
                     </a>
                     <a href={resumedocx} download>
-                        <div className="word">Word<img src={downloadIcon} alt="word download"/></div>
+                        <div className="download-btn word">Word<img src={downloadIcon} alt="word download"/></div>
                     </a>
                 </div>
                 <div className="pdf-content">

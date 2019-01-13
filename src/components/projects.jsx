@@ -19,11 +19,12 @@ const Projects = () => {
             </span>
             <div className="container-center">
                 <ul className="project-list">
-                    <ProjectItem projectName="Todos Plus" 
+                    <ProjectItem 
+                        projectName="Todos Plus" 
                         demo="https://sleepy-fortress-89639.herokuapp.com" 
                         technologies="angular,express,mongo,node" 
                         imgURL={todosplus} 
-                        desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keeping track of things you gotta do. The frontend is an Angular 6 app supported by an Express backend for the API--using Mongodb for the database." />
+                        desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keeping track of things you gotta do. The frontend is an Angular 6 app supported by an Express backend for the API--using Mongodb for the database with JSON web tokens for authentication." />
                     <ProjectItem 
                         projectName="Quick Poll (Front End)" 
                         demo="http://yaffa7.github.io/quick-poll" 
@@ -69,7 +70,7 @@ const ProjectItem = (props) => {
                 </div>
             </section>
             <section className="project-content">
-                <img src={props.imgURL} alt="project image" className="project-img" />
+                <img src={props.imgURL} alt="project" className="project-img" />
             </section>
             <p className="project-description">{props.desc ? props.desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod! Velit in ducimus temporibus asperiores perspiciatis ea sed delectus impedit?"}</p>
         </li>
