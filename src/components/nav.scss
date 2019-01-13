@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Product Sans Regular';
     src: url('../fonts/Product\ Sans\ Regular.ttf');
@@ -8,7 +7,6 @@
     font-family: 'Product Sans Bold';
     src: url('../fonts/Product\ Sans\ Bold.ttf');
 }
-
 
 .navbar {
     height: auto;
@@ -29,21 +27,18 @@
     text-decoration: none;
     list-style: none;
     float: right;
-}
-
-.item-list .nav-item {
-    padding: 8px;
-    display: inline-block;
-}
-
-.nav-item a {
-    font-size: 30px;
-    font-family: 'Product Sans Regular';
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
-}
-
-.nav-item a:hover {
-    transition: all 1s ease;
-    color: #fff;
+    .nav-item {
+        padding: 8px;
+        display: inline-block;
+        a {
+            font-size: 30px;
+            font-family: 'Product Sans Regular';
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            &:hover {
+                transition: all 1s ease;
+                color: #fff;
+            }
+        }
+    }
 }
