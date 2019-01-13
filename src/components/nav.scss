@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../fonts/Product\ Sans\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url('../fonts/Product\ Sans\ Bold.ttf');
+}
+
+.navbar {
+    height: auto;
+    width: 100%;
+    background: rgba(52, 58, 64, 1);
+    overflow: auto;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.item-list {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    .nav-item {
+        padding: 8px;
+        display: inline-block;
+        a {
+            font-size: 30px;
+            font-family: 'Product Sans Regular';
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            &:hover {
+                transition: all 1s ease;
+                color: #fff;
+            }
+        }
+    }
+}
