@@ -1,0 +1,137 @@
+/* Bread Crumbs */
+
+.current-page {
+    font-weight: bold;
+    margin-left: 5px;
+    font-family: 'Product Sans Bold';
+}
+
+/* Project List */
+
+ul.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0px;
+    max-width: 1000px;
+}
+
+.container-center {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+/* Project Item */
+
+li.project-item {
+    background: rgba(255,255,255,0.5);
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 2em;
+    margin-left: 0;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    color: rgba(52, 58, 64, 1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    border-radius: 3px; 
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+li.project-item:before {
+    filter: blur(4px);
+    content: '';
+}
+
+.project-title {
+    font-family: 'Product Sans Bold';
+    font-size: 35px;
+}
+
+.project-link {
+    font-family: 'Product Sans Bold';
+    font-size: 15px;
+    color: rgba(52, 58, 64, .9);
+    background: rgba(255,255,255,0.5);
+    border-radius: 1em;
+    padding: 6px 10px;
+    border-style: none;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: center;
+    flex: 1;
+}
+
+
+.project-link img {
+    width: 15px;
+    height: 15px;
+    flex: 1;
+    margin-left: 5px;
+}
+
+.project-header {
+    margin-bottom: 2em;
+    display: flex;
+    align-content: flex-end;
+}
+
+.l-header {
+    display: flex;
+    align-items: center;
+}
+
+.r-header {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.project-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.project-img {
+    width: 750px;
+    height: 422px;
+    border-radius: .25em;
+    margin-bottom: 1em;
+}
+.project-description {
+    font-size: 21px;
+    line-height: 1.50em;
+    font-family: 'Product Sans Regular';
+    margin-left: 1em;
+    color: rgb(49, 49, 49);
+}
+
+div.project-technologies {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Technologies */
+
+div.project-technologies .technology {
+    display: inline;
+    padding: 5px;
+}
+
+.technology img {
+    height: 50px;
+    width: 50px;
+}
+.technology img.node {
+    padding: 3px;
+    background-color: #8fc74f;
+    border-radius: 4em;
+}
+
+.technology img.react {
+    padding: 3px;
+    background-color: #3d3d3d;
+    border-radius: 4em;
+}
