@@ -101,8 +101,10 @@ li.project-item {
     font-size: 21px;
     line-height: 1.50em;
     font-family: 'Product Sans Regular';
-    margin-left: 1em;
     color: rgb(49, 49, 49);
+    background: rgba(255,255,255,0.3);
+    padding: 5px;
+    border-radius: .4em;
 }
 
 /* Technologies */
