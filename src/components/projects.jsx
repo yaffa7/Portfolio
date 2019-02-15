@@ -44,7 +44,7 @@ const ProjectItem = (props) => {
                 <div className="l-header">
                     <span className="project-title">{props.projectName}</span>
                     <a href={props.demo}>
-                        <button className="project-link">Demo <img src={externalicon} alt="external link icon" /></button>
+                        <button className="project-link">Demo <img src={externalicon} alt="external link icon" target="_blank"/></button>
                     </a>
                 </div>
                 <div className="r-header">
