@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "http://www.brendanmc.com/Portfolio",
+  "homepage": "http://yaffa7.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
