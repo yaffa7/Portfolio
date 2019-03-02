@@ -1,41 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './projects.css'
-import angularicon from '../icons/angular-icon.svg'
-import expressicon from '../icons/express-icon.png'
-import mongoicon from '../icons/mongo-icon.png'
-import nodeicon from '../icons/nodejs-icon.png'
-import reacticon from '../icons/react-icon.svg'
-import externalicon from '../icons/external-link.svg'
-import todosplus from '../images/todos-plus.png'
-import quickpoll from '../images/quick-poll.png'
+import './ProjectItem.css'
+import AngularIcon from '../Icons/Angular/AngularIcon'
+import ExpressIcon from '../Icons/Express/ExpressIcon'
+import mongoicon from '../../icons/mongo-icon.png'
+import nodeicon from '../../icons/nodejs-icon.png'
+import reacticon from '../../icons/react-icon.svg'
+import externalicon from '../../icons/external-link.svg'
+import todosplus from '../../images/todos-plus.png'
+import quickpoll from '../../images/quick-poll.png'
 
-const Projects = () => {
-    return (
-        <section className="content">
-            <span className="breadcrumbs">
-                <Link to="/">Home</Link> >
-                <span className="current-page">Projects</span>
-            </span>
-            <div className="container-center">
-                <ul className="project-list">
-                    <ProjectItem 
-                        projectName="Todos Plus" 
-                        demo="https://sleepy-fortress-89639.herokuapp.com" 
-                        technologies="angular,express,mongo,node" 
-                        imgURL={todosplus} 
-                        desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keeping track of things you gotta do. The frontend is an Angular 6 app supported by an Express backend for the API--using Mongodb for the database with JSON web tokens for authentication." />
-                    <ProjectItem 
-                        projectName="Quick Poll (Front End)" 
-                        demo="http://yaffa7.github.io/quick-poll" 
-                        technologies="react" 
-                        imgURL={quickpoll} 
-                        desc="Quick Poll is the front end for an anonymous poll website where you can easily create your own poll"/>
-                </ul>
-            </div>
-        </section>
-    )
-}
 
 const ProjectItem = (props) => {
     return (
@@ -77,18 +51,6 @@ const ProjectItem = (props) => {
     )
 }
 
-const AngularIcon = () => {
-    return (
-        <div className="technology"><img src={angularicon} alt="angular icon" /></div>
-    )
-}
-
-const ExpressIcon = () => {
-    return (
-        <div className="technology"><img src={expressicon} alt="express icon" /></div>
-    )
-}
-
 const MongoIcon = () => {
     return (
         <div className="technology"><img src={mongoicon} alt="mongodb icon" /></div>
@@ -106,4 +68,4 @@ const ReactIcon = () => {
     )
 }
 
-export default Projects
+export default ProjectItem

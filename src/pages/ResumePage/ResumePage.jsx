@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import './resume.css';
-import resumepdf from '../pdf/Resume-2018.pdf';
-import resumedocx from '../docx/Resume-2018.docx'
-import downloadIcon from '../icons/arrow-circle-down.svg'
+import './ResumePage.css';
+import resumepdf from '../../pdf/Resume-2018.pdf';
+import resumedocx from '../../docx/Resume-2018.docx'
+import downloadIcon from '../../icons/arrow-circle-down.svg'
 
-class Resume extends Component {
+class ResumePage extends Component {
     state = {
         numPages: null,
         pageNumber: 1
@@ -20,12 +20,7 @@ class Resume extends Component {
         const { pageNumber, numPages } = this.state;
         return (
             <section className='content'>
-                <span className="breadcrumbs">
-                    <Link to="/">Home</Link> >
-                    <span className="current-page">
-                        Resume
-                    </span>
-                </span>
+                <BreadCrumbs currentpage="Resume"/>
                 <div className="buttons">
                     <a href={resumepdf} download>
                         <div className="download-btn pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>
@@ -38,7 +33,7 @@ class Resume extends Component {
                     <Document
                         file={resumepdf}
                         onLoadSuccess={this.onDocumentLoad}
-                        loading="Loading..."
+                        loading="Loading../..."
                     >
                         <Page className="pdf-page"
                             pageNumber={pageNumber}
@@ -52,4 +47,4 @@ class Resume extends Component {
     }
 }
 
-export default Resume
+export default ResumePage

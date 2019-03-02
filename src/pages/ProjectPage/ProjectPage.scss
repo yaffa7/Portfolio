@@ -1,0 +1,16 @@
+
+
+/* Project List */
+
+ul.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0px;
+    max-width: 1000px;
+}
+
+.container-center {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}

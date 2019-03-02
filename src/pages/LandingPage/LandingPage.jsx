@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './landingpage.css'
-import linkedinIcon from '../icons/linkedin.svg'
-import githubicon from '../icons/github.svg'
-import meetupIcon from '../icons/meetup.svg'
+import linkedinIcon from '../../icons/linkedin.svg'
+import githubicon from '../../icons/github.svg'
+import meetupIcon from '../../icons/meetup.svg'
 
 class LandingPage extends Component {
     render() {

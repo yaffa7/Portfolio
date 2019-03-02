@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Nav from './components/nav'
-import LandingPage from './components/landingpage'
-import Projects from './components/projects'
-import Resume from './components/resume'
+import Nav from './components/Nav/Nav'
+import LandingPage from './pages/LandingPage/LandingPage'
+import ProjectPage from './pages/ProjectPage/ProjectPage'
+import ResumePage from './pages/ResumePage/ResumePage'
 import { Route } from 'react-router-dom'
 
 import './App.css';
@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <Nav/>
-        <Route path="/projects" component={Projects}/>
-        <Route path="/resume" component={Resume}/>
+        <Route path="/projects" component={ProjectPage}/>
+        <Route path="/resume" component={ResumePage}/>
         <Route exact path="/" component={LandingPage}/>
       </div>
     );
