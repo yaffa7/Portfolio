@@ -33,7 +33,7 @@ class ResumePage extends Component {
                     <Document
                         file={resumepdf}
                         onLoadSuccess={this.onDocumentLoad}
-                        loading="Loading../..."
+                        loading="Loading..."
                     >
                         <Page className="pdf-page"
                             pageNumber={pageNumber}
