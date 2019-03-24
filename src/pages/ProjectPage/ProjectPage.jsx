@@ -8,7 +8,9 @@ import ProjectItem from '../../components/ProjectItem/ProjectItem'
 const ProjectPage = () => {
     return (
         <section className="content">
+        <div className="sticky-container">
             <BreadCrumbs currentpage="Projects"/>
+        </div>
             <div className="container-center">
                 <ul className="project-list">
                     <ProjectItem 

@@ -20,7 +20,9 @@ class ResumePage extends Component {
         const { pageNumber, numPages } = this.state;
         return (
             <section className='content'>
+            <div className="sticky-container">
                 <BreadCrumbs currentpage="Resume"/>
+            </div>
                 <div className="buttons">
                     <a href={resumepdf} download>
                         <div className="download-btn pdf">pdf<img src={downloadIcon} alt="pdf download"/></div>

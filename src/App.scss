@@ -30,6 +30,12 @@ a {
 section.content {
   margin: 5em 5em;
 }
+.sticky-container  {
+  z-index: 2;
+  position: -webkit-sticky;
+  top: 14px;
+  margin-left: 10px;
+}
 
 
 // @media screen and (-webkit-device-pixel-ratio : 3), (-webkit-device-pixel-ratio : 2)  {
