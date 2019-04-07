@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import './Nav.css'
+import HamburgerIcon from '../Icons/Hamburger/Hamburger'
 
 class Nav extends Component {
     
@@ -17,6 +18,9 @@ class Nav extends Component {
                         </li>
                         <li className="nav-item">
                             <a href="https://github.com/yaffa7" className="nav-link">Github</a>
+                        </li>
+                        <li className="nav-item">
+                            <HamburgerIcon/>
                         </li>
                     </ul>
                 </nav>
