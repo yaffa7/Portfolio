@@ -5,10 +5,25 @@ import HamburgerIcon from '../Icons/Hamburger/Hamburger'
 
 class Nav extends Component {
     
+
+    componentWillMount() {
+        window.addEventListener('scroll', () => {
+            this.setState( {
+              y: window.pageYOffset
+            })
+            this.updateScrollState()
+          })
+    }
+
+    updateScrollState() {
+        this.setState({ y : window.pageYOffset})
+    }
+
     render() {
+        const shouldBeOpaque = this.state && this.state.y > 65;
         return (
             <div>
-                <nav className="navbar">
+                <nav className={shouldBeOpaque ? 'navbar-opaque' : 'navbar'}>
                     <ul className="item-list">
                         <li className="nav-item">
                             <Link to="/projects">Projects</Link>

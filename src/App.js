@@ -8,10 +8,14 @@ import { Route } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <div className="App">
-        <Nav/>
+          <Nav/> 
         <Route path="/projects" component={ProjectPage}/>
         <Route path="/resume" component={ResumePage}/>
         <Route exact path="/" component={LandingPage}/>
