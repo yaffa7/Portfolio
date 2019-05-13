@@ -19,7 +19,7 @@
     text-transform: uppercase;
     padding-left: 10px;
     letter-spacing: .8px;
-    transition: box-shadow .15s ease-in;
+    transition: box-shadow .15s ease-out;
     &:hover {
         box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
     }
