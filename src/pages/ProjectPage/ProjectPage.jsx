@@ -18,7 +18,7 @@ const ProjectPage = () => {
                         demo="https://sleepy-fortress-89639.herokuapp.com" 
                         technologies="angular,express,mongo,node" 
                         imgURL={todosplus} 
-                        desc="Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keeping track of things you gotta do. The frontend is an Angular 6 app supported by an Express backend for the API--using Mongodb for the database with JSON web tokens for authentication." />
+                        desc="Write it down. Get it done. Todos Plus is a Full-Stack javascript app meant for creating a log of tasks and keeping track of things you gotta do. The frontend is an Angular 6 app supported by an Express backend for the API--using Mongodb for the database with JSON web tokens for authentication." />
                     <ProjectItem 
                         projectName="Quick Poll (Front End)" 
                         demo="http://yaffa7.github.io/quick-poll" 
