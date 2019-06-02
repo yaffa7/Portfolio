@@ -32,8 +32,10 @@ section.content {
 .sticky-container  {
   z-index: 2;
   position: sticky;
-  top: 12px;
+  top: 14px;
   margin-left: 10px;
+  width: 400px;
+  margin-right: 0px;
 }
 @media (min-width: 800px) {
   .hamburger.container {

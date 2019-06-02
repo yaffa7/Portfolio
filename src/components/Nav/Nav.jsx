@@ -4,8 +4,6 @@ import './Nav.css'
 import HamburgerIcon from '../Icons/Hamburger/Hamburger'
 
 class Nav extends Component {
-    
-
     componentWillMount() {
         window.addEventListener('scroll', () => {
             this.setState( {
