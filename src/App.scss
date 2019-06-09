@@ -50,18 +50,27 @@ section.content {
 
 @media (max-width:800px) {
   .navbar {
+    // display: inline-block;
     width: auto;
     height: auto;
+    right: 0px;
     &-opaque {
       overflow: auto;
       width: auto;
       height: auto;
     }
   }
+  .navbar-opaque {
+    right: 0px;
+  }
   .item-list {
     display: flex;
+
     .nav-item {
-      justify-content: space-between; 
+      display: none; 
+      &:last-child {
+        display: block;
+      }
     }
   }
 
@@ -73,7 +82,7 @@ section.content {
   }
   ul.item-list-expanded {
     display: block;
-    float: right;
+    justify-content: flex-end;
   }
 
   li.nav-item-expanded {
