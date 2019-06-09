@@ -37,11 +37,17 @@ section.content {
   width: 400px;
   margin-right: 0px;
 }
+
+// Desktop
+
 @media (min-width: 800px) {
   .hamburger.container {
     display: none;
   }
 }
+
+// Mobile
+
 @media (max-width:800px) {
   .navbar {
     width: 100vw;
@@ -102,8 +108,14 @@ section.content {
   .title-container {
     margin-top: 100px;
   }
+
+  .subtitle h4 {
+    margin-bottom: 0.5em;
+  }
+
   .subtitle {
     font-size: 2em;
+    display: inline-block;
   }
   .buttons {
     margin-top: 1em;
