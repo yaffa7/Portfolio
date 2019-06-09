@@ -5,16 +5,32 @@ import HamburgerIcon from '../Icons/Hamburger/Hamburger'
 
 class Nav extends Component {
     componentWillMount() {
+        this.setState({
+            y: window.pageYOffset,
+            expanded: false
+        })
+        // User scroll event
         window.addEventListener('scroll', () => {
-            this.setState( {
-              y: window.pageYOffset
-            })
             this.updateScrollState()
-          })
+        })
     }
 
     updateScrollState() {
-        this.setState({ y : window.pageYOffset})
+        this.setState((state) => {
+            return {
+                y: window.pageYOffset,
+                expanded: state.expanded
+            }
+        })
+    }
+
+    updateExpanded = () => {
+        this.setState((state) => {
+            return {
+                y: state.y,
+                expanded: !state.expanded
+            }
+        }, function () { console.log(this.state); })
     }
 
     render() {
