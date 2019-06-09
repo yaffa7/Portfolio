@@ -71,11 +71,14 @@ class Nav extends Component {
             else {
                 return (
                     <div>
-                    <nav className={shouldBeOpaque ? 'navbar-opaque' : 'navbar'}>
+                    <nav className="navbar-opaque">
                         <div onClick={this.updateExpanded}>
                             <HamburgerIcon expanded={true}/>
                         </div>
                         <ul className="item-list-expanded" onClick={this.handleClick}>
+                            <li className="nav-item-expanded">
+                                <Link to="/">Home</Link>
+                            </li>
                             <li className="nav-item-expanded">
                                 <Link to="/projects">Projects</Link>
                             </li>
