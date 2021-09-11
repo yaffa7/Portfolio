@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import './Nav.css'
+import './Nav.scss'
 import HamburgerIcon from '../Icons/Hamburger/Hamburger'
 
 class Nav extends Component {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './BreadCrumbs.css'
+import './BreadCrumbs.scss'
 
 const Breadcrumbs = (props) => {
     return (

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import './ResumePage.css';
-import resumepdf from '../../pdf/Resume-2020.pdf';
+import './ResumePage.scss';
+import resumepdf from '../../pdf/Resume-2021.pdf';
 import resumedocx from '../../docx/Resume-2020.docx'
 import downloadIcon from '../../icons/arrow-circle-down.svg'
 

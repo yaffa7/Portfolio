@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './ProjectItem.css'
+import './ProjectItem.scss'
 import AngularIcon from '../Icons/Angular/AngularIcon'
 import ExpressIcon from '../Icons/Express/ExpressIcon'
 import mongoicon from '../../icons/mongo-icon.png'

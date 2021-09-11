@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hamburger.css'
+import './Hamburger.scss'
 
 const Hamburger = (props) => {
     return (
