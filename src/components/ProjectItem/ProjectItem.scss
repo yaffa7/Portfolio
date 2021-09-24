@@ -93,8 +93,15 @@ li.project-item {
     display: flex;
     justify-content: flex-end;
     .generic-technology {
-        padding: 3px;
-        background-color: #8fc74f;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Product Sans Regular';
+        color: white;
+        height: 50px;
+        width:50px;
+        padding: 4px;
+        background-color: #3d3d3d;
         border-radius: 4em;
     }
     .technology {
