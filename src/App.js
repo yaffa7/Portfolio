@@ -5,7 +5,7 @@ import ProjectPage from './pages/ProjectPage/ProjectPage'
 import ResumePage from './pages/ResumePage/ResumePage'
 import { Route } from 'react-router-dom'
 
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor(props) {

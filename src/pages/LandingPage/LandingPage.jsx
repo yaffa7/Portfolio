@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './landingpage.css'
+import './landingpage.scss'
 import linkedinIcon from '../../icons/linkedin.svg'
 import githubicon from '../../icons/github.svg'
 import meetupIcon from '../../icons/meetup.svg'

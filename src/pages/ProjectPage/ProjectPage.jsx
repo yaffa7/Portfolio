@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectPage.css'
+import './ProjectPage.scss'
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
 import todosplus from '../../images/todos-plus.png'
 import quickpoll from '../../images/quick-poll.png'
