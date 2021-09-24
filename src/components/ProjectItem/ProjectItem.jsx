@@ -7,9 +7,6 @@ import mongoicon from '../../icons/mongo-icon.png'
 import nodeicon from '../../icons/nodejs-icon.png'
 import reacticon from '../../icons/react-icon.svg'
 import externalicon from '../../icons/external-link.svg'
-import todosplus from '../../images/todos-plus.png'
-import quickpoll from '../../images/quick-poll.png'
-
 
 const ProjectItem = (props) => {
     return (

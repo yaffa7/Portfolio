@@ -17,7 +17,7 @@ class ResumePage extends Component {
     }
 
     render() {
-        const { pageNumber, numPages } = this.state;
+        const { pageNumber } = this.state;
         return (
             <section className='content'>
             <div className="sticky-container">

@@ -47,7 +47,7 @@ class Nav extends Component {
         let expanded = this.state && this.state.expanded;
 
 
-        { if (expanded == false) {
+        { if (expanded === false) {
             return (
                 <div>
                     <nav className={shouldBeOpaque ? 'navbar-opaque' : 'navbar'}>
