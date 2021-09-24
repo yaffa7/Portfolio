@@ -3,6 +3,7 @@ import './ProjectPage.css'
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
 import todosplus from '../../images/todos-plus.png'
 import quickpoll from '../../images/quick-poll.png'
+import foa from '../../images/fields-of-aeorzia.png'
 import ProjectItem from '../../components/ProjectItem/ProjectItem'
 
 const ProjectPage = () => {
@@ -13,6 +14,13 @@ const ProjectPage = () => {
         </div>
             <div className="container-center">
                 <ul className="project-list">
+                    <ProjectItem
+                        projectName="Fields of Aeorzia (Work-in-Progress)"
+                        demo="https://yaffa7.github.io/aeorzia/"
+                        imgURL={foa}
+                        technologies="react,MobX"
+                        desc="Opensource turn-based dungeon crawler."
+                    />
                     <ProjectItem 
                         projectName="Todos Plus" 
                         demo="https://sleepy-fortress-89639.herokuapp.com" 

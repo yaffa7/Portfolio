@@ -11,7 +11,7 @@ class LandingPage extends Component {
                 <div className="title-container">
                     <h1 className="title">Brendan McMahon</h1>
                     <div className="subtitle">
-                        <h4>I Build Things</h4>
+                        <h4>Developer</h4>
                         <a href="https://github.com/yaffa7/" target="__blank">
                             <img src={githubicon} alt="" />
                         </a>

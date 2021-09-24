@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './ProjectItem.css'
 import AngularIcon from '../Icons/Angular/AngularIcon'
 import ExpressIcon from '../Icons/Express/ExpressIcon'
+import GenericIcon from '../Icons/GenericIcon'
 import mongoicon from '../../icons/mongo-icon.png'
 import nodeicon from '../../icons/nodejs-icon.png'
 import reacticon from '../../icons/react-icon.svg'
@@ -36,6 +37,7 @@ const ProjectItem = (props) => {
                             if (t === 'react') {
                                 return <ReactIcon key={t} />
                             }
+                            return <GenericIcon text={t}/>
                         })}
                     </div>
                 </div>
