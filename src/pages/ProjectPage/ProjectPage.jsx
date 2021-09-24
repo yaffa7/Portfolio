@@ -19,7 +19,7 @@ const ProjectPage = () => {
                         demo="https://yaffa7.github.io/aeorzia/"
                         imgURL={foa}
                         technologies="react,MobX"
-                        desc="Opensource turn-based dungeon crawler."
+                        desc="Opensource turn-based dungeon crawler. Extendable framework for creating adventures."
                     />
                     <ProjectItem 
                         projectName="Todos Plus" 
