@@ -4,6 +4,7 @@ import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
 import todosplus from '../../images/todos-plus.png'
 import quickpoll from '../../images/quick-poll.png'
 import foa from '../../images/fields-of-aeorzia.png'
+import weather from '../../images/weather.png'
 import ProjectItem from '../../components/ProjectItem/ProjectItem'
 
 const ProjectPage = () => {
@@ -14,6 +15,13 @@ const ProjectPage = () => {
         </div>
             <div className="container-center">
                 <ul className="project-list">
+                    <ProjectItem
+                        projectName="Weath.er"
+                        demo="https://yaffa7.github.io/weather/"
+                        imgURL={weather}
+                        technologies="OW"
+                        desc='Weather app that changes depending on time of day. Powered by the OpenWeather API'
+                    />
                     <ProjectItem
                         projectName="Fields of Aeorzia (Work-in-Progress)"
                         demo="https://yaffa7.github.io/aeorzia/"
