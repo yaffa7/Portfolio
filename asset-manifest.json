@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.cb5c017a.chunk.css",
-    "main.js": "/static/js/main.15a3dea6.chunk.js",
-    "main.js.map": "/static/js/main.15a3dea6.chunk.js.map",
+    "main.js": "/static/js/main.3d6e1946.chunk.js",
+    "main.js.map": "/static/js/main.3d6e1946.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5d14a89c.js",
     "runtime-main.js.map": "/static/js/runtime-main.5d14a89c.js.map",
     "static/js/2.1bab6e77.chunk.js": "/static/js/2.1bab6e77.chunk.js",
@@ -29,12 +29,13 @@
     "static/media/App.scss": "/static/media/pines.dc6e3c75.jpg",
     "static/media/quick-poll.c30b5c2c.png": "/static/media/quick-poll.c30b5c2c.png",
     "static/media/react-icon.51193a6f.svg": "/static/media/react-icon.51193a6f.svg",
-    "static/media/todos-plus.808c063c.png": "/static/media/todos-plus.808c063c.png"
+    "static/media/todos-plus.808c063c.png": "/static/media/todos-plus.808c063c.png",
+    "static/media/weather.f40458bb.png": "/static/media/weather.f40458bb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5d14a89c.js",
     "static/js/2.1bab6e77.chunk.js",
     "static/css/main.cb5c017a.chunk.css",
-    "static/js/main.15a3dea6.chunk.js"
+    "static/js/main.3d6e1946.chunk.js"
   ]
 }
