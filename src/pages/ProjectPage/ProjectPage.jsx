@@ -16,7 +16,7 @@ const ProjectPage = () => {
             <div className="container-center">
                 <ul className="project-list">
                     <ProjectItem
-                        projectName="Weath.er"
+                        projectName="Weather Dashboard"
                         demo="https://yaffa7.github.io/weather/"
                         imgURL={weather}
                         technologies="OW"
